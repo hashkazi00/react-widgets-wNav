@@ -15,7 +15,7 @@ const Accordion = ({items}) => {
         const active = index === activeState ? 'active' : '';
 
         return (
-            <React.Fragment key={item.value}>
+            <React.Fragment key={item.title}>
                 <div className={`title ${active}`} onClick={() => {onTitleClick(index)}}>
                     <i className="icon dropdown"></i>
                     {item.title}

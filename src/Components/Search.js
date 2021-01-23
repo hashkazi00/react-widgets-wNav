@@ -39,7 +39,6 @@ const Search = () =>{
 
         search();
 
-        console.log('search');
         
     },[debouncedTerm]);
 
