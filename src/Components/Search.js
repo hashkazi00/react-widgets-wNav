@@ -30,7 +30,7 @@ const Search = () =>{
                     list:'search',
                     format:'json',
                     origin:'*',
-                    srsearch:term
+                    srsearch:debouncedTerm
                 }
             })
             setResults(data.query.search);
